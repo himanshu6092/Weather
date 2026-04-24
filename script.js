@@ -16,7 +16,6 @@ async function getWeather() {
     document.getElementById('wind').innerText = data.current.wind_kph;
     document.getElementById('icon').src = `https:${data.current.condition.icon}`;
     document.getElementById('pm25').innerText = data.current.air_quality.pm2_5.toFixed(2);
-
     document.getElementById('weatherResult').style.display = 'block';
   } catch (error) {
     alert('Could not retrieve weather data. Please check the city name.');
