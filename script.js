@@ -1,3 +1,4 @@
+alert("Hello");
 async function getWeather() {
   const city = document.getElementById('cityInput').value;
   const apiKey = 'cd848e8c3e0341fba12140813252908';
